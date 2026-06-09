@@ -144,13 +144,7 @@ boAt-PowerBI-Dashboard/
 │   └── Return.csv
 ├── dashboard_preview.pdf      #
 └── README.md
-```
-
----
-
-
-**Page 1 — Overview**
-![Overview](dashboard_preview.pdf)
+)
 
 ## 👤 Author
 
