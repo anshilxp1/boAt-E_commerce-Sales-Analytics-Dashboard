@@ -1,10 +1,7 @@
 # 🎧 boAt Lifestyle — Power BI Sales Dashboard
 
-> 3-page interactive Power BI report analyzing boAt's e-commerce sales, revenue, and returns across India.
+>An end-to-end Power BI analytics project built on boAt's e-commerce sales data, coveringcustomer behavior, revenue trends, product performance, and return analysis across India.
 
-![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat&logo=powerbi&logoColor=black)
-![DAX](https://img.shields.io/badge/DAX-0078D4?style=flat&logo=microsoft&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
 ---
 
@@ -57,7 +54,9 @@ Return Rate %   = DIVIDE([Total Returns], [Total Orders], 0) * 100
 
 `Power BI Desktop` · `DAX` · `Power Query (M)` · `Bing Maps` · `CSV`
 
----
+
+---To get dashboard pdf - [file:///E:/CETPA/power%20bi/BOAT%20PROJECT/boat_project_pdf.pdf](url
+)
 
 ## 🏫 Built During
 
