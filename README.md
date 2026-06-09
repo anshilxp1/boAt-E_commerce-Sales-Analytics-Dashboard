@@ -44,7 +44,7 @@ Product count by category and review sentiment, return volume by category and re
 
 ```DAX
 -- Total Revenue
-Total Revenue = SUMX(Order_Detail, Order_Detail[quantity] * Order_Detail[unit_price] * (1 - Order_Detail[discount_percent]/100))
+Total Revenue  ='Order_Detail csv'[unit_price]*'Order_Detail csv'[quantity]-'Order_Detail csv'[disc_price2]*'Order_Detail csv'[quantity]*'Order_Detail csv'[unit_price]
 
 -- Total Orders
 Total Orders = DISTINCTCOUNT(Order_Boat[order_id])
@@ -65,20 +65,11 @@ Total Qty = SUM(Order_Detail[quantity])
 Avg Revenue = DIVIDE([Total Revenue], [Total Orders])
 
 -- Weekend Revenue
-Weekend Revenue = 
-CALCULATE(
-    [Total Revenue],
-    FILTER(
-        ALL(Order_Boat),
-        WEEKDAY(Order_Boat[order_date], 2) >= 6
-    )
-)
+Weekend Revenue = =format('Order_Boat csv'[order_date],"dddd")
 
 -- Return Rate %
 Return Rate % = DIVIDE([Total Returns], [Total Orders], 0) * 100
 
--- Month Number (for sorting)
-Month Number = MONTH(Order_Boat[order_date])
 ```
 
 ---
@@ -123,20 +114,6 @@ Month Number = MONTH(Order_Boat[order_date])
 | `Product.csv` | Product catalog — name, MRP, category, rating, color, review |
 | `Return.csv` | Return records — return date, reason, refund status |
 
----
-
-## 🔗 Data Model (Relationships)
-
-```
-Boat_Customer (customer_id) ──── Order_Boat (customer_id)
-Order_Boat (order_id)       ──── Order_Detail (Order_id)
-Order_Detail (product_id)   ──── Product (product_id)
-Order_Detail (Order_Detail_id) ── Return (order_detail_id)
-```
-
-All relationships are **one-to-many**, forming a star/snowflake schema.
-
----
 
 ## 🛠️ Tools & Technologies
 
@@ -158,27 +135,22 @@ This project was completed as part of a **Data Analytics training program** at [
 ```
 boAt-PowerBI-Dashboard/
 │
-├── boat.pbix                  # Power BI report file
+├── boat.pbix                  
 ├── datasets/
 │   ├── Boat_Customer.csv
 │   ├── Order_Boat.csv
 │   ├── Order_Detail.csv
 │   ├── Product.csv
 │   └── Return.csv
-├── dashboard_preview.pdf      # Exported PDF of all 3 pages
+├── dashboard_preview.pdf      #
 └── README.md
 ```
 
 ---
 
-## 📸 Dashboard Preview
-
-> See `dashboard_preview.pdf` for full resolution screenshots of all three pages.
 
 **Page 1 — Overview**
 ![Overview](dashboard_preview.pdf)
-
----
 
 ## 👤 Author
 
