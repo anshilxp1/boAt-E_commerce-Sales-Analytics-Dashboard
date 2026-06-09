@@ -55,9 +55,6 @@ Return Rate %   = DIVIDE([Total Returns], [Total Orders], 0) * 100
 `Power BI Desktop` · `DAX` · `Power Query (M)` · `Bing Maps` · `CSV`
 
 
----To get dashboard pdf - [file:///E:/CETPA/power%20bi/BOAT%20PROJECT/boat_project_pdf.pdf](url
-)
-
 ## 🏫 Built During
 
 **Data Analytics Training — CETPA Infotech Pvt. Ltd., Noida**
