@@ -16,7 +16,6 @@
 | Revenue | Category & day-wise revenue, top 5 products |
 | Product & Return | Return reasons, refund status, review sentiment |
 
-> 📄 See `dashboard_preview.pdf` for full screenshots.
 
 ---
 
