@@ -1,4 +1,4 @@
-# 🎧 boAt Lifestyle — Power BI Sales Dashboard
+# 🎧 boAt E-Commerce Sales Analytics Power BI Dashboard
 An end-to-end Power BI analytics project built on boAt's e-commerce sales data, covering customer behavior, revenue trends, product performance, and return analysis across India.Built during training at
 CETPA Infotech Pvt. Ltd.
 
@@ -60,4 +60,4 @@ Return Rate %   = DIVIDE([Total Returns], [Total Orders], 0) * 100
 
 **Data Analytics Training — CETPA Infotech Pvt. Ltd., Noida**
 
-**Author:** Anshil · 📍 Lucknow, UP
+**Author:** Anshil Gautam · 📍 Lucknow, UP
