@@ -1,5 +1,5 @@
 # 🎧 boAt Lifestyle — Power BI Sales Dashboard
-An end-to-end Power BI analytics project built on boAt's e-commerce sales data, coveringcustomer behavior, revenue trends, product performance, and return analysis across India.Built during training at
+An end-to-end Power BI analytics project built on boAt's e-commerce sales data, covering customer behavior, revenue trends, product performance, and return analysis across India.Built during training at
 CETPA Infotech Pvt. Ltd.
 
 ---
